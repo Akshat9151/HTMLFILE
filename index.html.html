@@ -309,19 +309,34 @@
         </div>
     </div>
 </div>
-    <section>
+    <h1>Product Reviews</h1>
 
-    <!--client-reviws-section-->
-<section class="client-reviws">                                                                 
-    <div class="review-container">
-        <img src="BAKSHI.LOGO_files/farmer.jpg" alt="C:\Users\abc\OneDrive\Desktop">
-        <p class="client-name">Ramesh</p>
-        <p><strong>Product Name:</strong> Best Seeds 2024</p>
-        <p><strong>Rating:</strong> <span class="rating">5 stars</span></p>
-        <p><strong>Comments:</strong> These seeds produced an excellent yield.</p>
+<div id="reviews-container">
+    <!-- Reviews will be dynamically added here -->
+</div>
+
+<h2>Add Your Review</h2>
+<form id="review-form">
+    <div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
     </div>
-</section>
-    
+    <div>
+        <label for="rating">Rating:</label>
+        <select id="rating" required>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+    </div>
+    <div>
+        <label for="comment">Your Review:</label>
+        <textarea id="comment" required></textarea>
+    </div>
+    <button type="submit">Submit Review</button>
+</form>
     
     <script src="java.js"></script>
 
